@@ -1,3 +1,222 @@
-h1{
-    color:aqua;
+/*------------------------------------------
+                     Import Poppins Google Fonts
+                    ------------------------------------------------------- */
+  @import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins:wght@700&display=swap');
+
+
+  /*    ------------------
+                    Common Styles
+                            ---------------------*/
+  body{
+    font-family: 'Poppins', sans-serif;
+  }
+
+  /* -----------------------------------------------
+                            Header
+  -------------------------------------------------------------- */
+.header-title{
+    font-size: 24px;
+    color:#3A3A3A;
+}
+.header-detail{
+    display: grid;
+    /* width: 100%; */
+    grid-template-columns: repeat(2, 1fr);
+    justify-content:space-between;
+    align-items: center;
+    margin: 87px 120px;
+}
+nav a {
+    text-decoration: none;
+    color: #3A3A3A;
+    font-size: 19px;
+    margin-left: 34px;
+
+}
+nav a .fa-bars.menu{
+    display: none;
+}
+/* *************************Responsive Area******************************************** */
+@media only screen and (max-width: 576px) {
+    .header-detail{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        margin-left: 0;
+        margin-top:10px ;
+    }
+    nav a {
+        display: none;
+    }
+   
+}
+
+/******************************** Banner Details************************************ */
+.banner-container{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    align-items: center;
+    margin-left: 87px ;
+    gap: 133px;
+    
+}
+.banner-title{
+    font-size: 52px;
+}
+.bannerdetails{
+    font-size: 16px;
+    font-weight: 600;
+}
+.bannerbtn{
+    width: 115px;
+    height: 24px;
+    border-radius: 41px;
+    background-color: #E02C6D;
+    color: #FFFFFF;
+    border: none;
+}
+.bannerImg img{
+    height: 414px;
+    width: 440px;
+}
+/* ***************************Responsive******************************************** */
+@media only screen and (max-width:576px) {
+        .banner-container{
+            display: flex;
+            flex-direction: column-reverse;
+        }
+}
+/****************************** Sub Banner *******************************************/
+.sub-banner{
+    display: flex;
+    gap: 61px;
+    justify-content: center;
+    margin:100px 0; 
+    
+}
+/* **************************Responsive********************************************** */
+@media only screen and (max-width:576px) {
+    .sub-banner{
+        flex-wrap: wrap;
+    }
+}
+
+/**************************** Product details ****************************************/
+.productMainTitle{
+    color: #3A3A3A;
+    font-size: 28px;
+    text-align: center;
+    margin-bottom: 47px;
+}
+.porducts{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 30px;
+    margin-left: 293px;
+    margin-right: 100px;
+}
+.product{
+    width: 329px;  
+    background-color: #FFFFFF;
+    box-shadow:0px 0px 40px rgba(0, 0, 0, 0.15);
+    padding-top: 17px;
+    border-radius: 5px;
+   
+
+}
+.product-img{
+  width: 100%;
+  margin-left: 15px;
+  
+}
+.product-title{
+    color: #18191F;
+    font-size: 28px;
+    font-weight: 500;
+    padding-left:15px;
+}
+.product-price{
+ font-size: 24px;
+ font-weight: 400;
+ padding-left: 15px;
+}
+.fa-star, .fa-star-half-stroke{
+    color: #FB8200;
+    padding-left: 15px;
+}
+.product-detail{
+    color: #787885;
+    padding-left: 15px;
+}
+/* *************************Responsive******************************************* */
+@media only screen and (max-width:576px) {
+    .porducts{
+        margin:0;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+}
+/**************************** Feature Porducts************************************/
+.feature-products{
+    display:flex;
+    align-items: center;
+    gap: 96px;
+    margin-top: 165px;
+    margin-bottom: 100px;
+}
+.featureimg img{
+    margin-left: 165px;
+}
+.feature-title{
+    font-size: 38px;
+}
+.feature-details{
+    font-size: 16px;
+    height: 88px;
+    width: 501px;
+}
+.featurebtn{
+    color: #FFFFFF;
+    border: none;
+    height: 44px;
+    width: 151px;
+    background-color: #E02C6D;
+}
+/* **********************Responsive Area*************************************** */
+@media only screen and (max-width:576px){
+    .feature-products{
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    .feature-title{
+        text-align:left;
+        margin-left: 30px;
+        padding-right: 20px;
+    }
+    .feature-details{
+       text-align: center;
+    }
+    .featurebtn{
+        margin-left: 193px;
+    }
+    .featureimg img{
+        margin-left:30px;
+    }
+
+}
+
+/************************** footer ****************************/
+.footer-container{
+    height: 320px;
+    background-color: #0A0826;
+    color: #FFFFFF;
+    text-align: center;
+}
+.footer-details{
+    padding-top: 50px;
+}
+.fa-brands{
+    margin-left: 20px;
 }
